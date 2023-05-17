@@ -15,7 +15,7 @@ const Post = ({ url }) => {
         buscar(`/posts/${id}`, setPost).catch(() => {
             navigate("/not-found")
         })
-    }, [id])
+    }, [id, navigate])
 
 
     return (
